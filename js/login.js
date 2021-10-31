@@ -10,11 +10,9 @@ function onLoginBtnClick() {
 }
 
 function onLoginSubmit(event){
-  console.log(username);
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   localStorage.setItem(USERNAME_KEY, loginInput.value);
-  console.log(username);
   paintGreetings(username);
 }
 
