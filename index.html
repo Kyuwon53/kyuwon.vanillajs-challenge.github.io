@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Kyuwon App</title>
+</head>
+<body>
+  <div id="clock">00:00:00</div>
+  <form id="login-form" class="hidden">
+    <input required maxlength="15" type="text" placeholder="이름을 입력하세요" >
+    <button class="button">Log In</button>
+  </form>
+  <div id="greeting" class="hidden greeting"></div>
+  <form id="todo-form">
+    <input type="text" placeholder="오늘의 할 일">
+  </form>
+  <ul id="todo-list"></ul>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <script src="js/login.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
